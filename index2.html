@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //    class Calculate{
+    //       constructor(number){
+    //           this.number=number
+    //       }
+    //           plus(num)
+    //           {
+    //               this.number+=num
+    //               return this
+    //           }
+    //           minus(num)
+    //           {
+    //               this.number -=num
+    //               return this
+    //           }
+    //           multiply(num)
+    //           {
+    //             this.number *=num
+    //               return this
+    //           }
+    //           divide(num)
+    //           {
+    //             this.number /=num
+    //               return this
+    //           }
+            
+
+    //       }
+    //   let result = new Calculate(50).plus(6).minus(30).multiply(3).divide(2)
+    //   console.log(result);
+
+    // class Books{
+    //     constructor(name,author,year,price){
+    //         this.name=name
+    //         this.author=author
+    //         this.year=year
+    //         this.price = price
+           
+    //     }
+    //         price2(num){
+    //         let price2 = this.price-(this.price*(num/100))
+    //         console.log(  this.name +" "+this.author + " " + this.year+ " " + this.price+" "+price2);
+    //         }
+          
+            
+    //     }
+    //     let result = new Books("Lek","Hadji Davud",1000,100)
+    //     result.price2(10)
+
+const array = [];
+const arr=[1,2,3,4]
+function myf(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i, arr);
+  }
+}
+myf(arr, function (x) { array.push(x -5)});
+console.log(array); 
+
+
+
+const array1=[]
+myf(arr,function(x,i){array1.push(i*5);})
+console.log(array1);
+    
+
+
+ 
+    </script>
+  </body>
+</html>
